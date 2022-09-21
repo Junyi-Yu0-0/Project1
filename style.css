@@ -146,14 +146,14 @@ h1{
   height: 100%;
 }
 
-.navigation a{
+.navigation li{
   height: 100%;
   display: table;
   float: left;
   padding: 0px 20px;
 }
 
-.navigation a li{
+.navigation li a{
   display: table-cell;
   vertical-align: middle;
   height: 100%;
@@ -162,7 +162,7 @@ h1{
   font-size: 30px;
 }
 
-.navigation a:last-child{
+.navigation li:last-child{
   padding-right: 3;
 }
 
