@@ -29,13 +29,31 @@ html{
 }
 
 h1{
-  color: Black;
+  color: black;
   height: 100%;
   display: table-cell;
   vertical-align: middle;
   font-family:'Grindstone', sans-serif;
   font-size: 100px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  cursor: pointer;
 }
+
+/*
+h1:hover span:nth-child(1){
+  margin-top:20px;
+}
+h1:hover span:nth-child(2){
+  margin-top:20px;
+}
+h1:hover span:nth-child(3){
+  margin-top:20px;
+}
+h1:hover span{
+  color: black;
+}
+*/
 
 .scroll-down{
   height: 50px;
