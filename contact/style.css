@@ -70,6 +70,13 @@ h1{
 .navigation{
   float: right;
   height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-bottom: 20px;
+  position: sticky;
+  top: 0px;
+  background-color: black;
 }
 
 .navigation li{
