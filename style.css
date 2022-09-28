@@ -44,7 +44,7 @@ html {
 }
 
 h1 {
-  color: black;
+  color: Dimgray;
   height: 100%;
   display: table-cell;
   vertical-align: middle;
@@ -55,20 +55,22 @@ h1 {
   cursor: pointer;
 }
 
-/*
-h1:hover span:nth-child(1){
-  margin-top:20px;
+.container h1:hover span:nth-child(1) {
+  margin-top: 20px;
 }
-h1:hover span:nth-child(2){
-  margin-top:20px;
+
+.container h1:hover span:nth-child(2) {
+  margin-top: 20px;
 }
-h1:hover span:nth-child(3){
-  margin-top:20px;
+
+.container h1:hover span:nth-child(3) {
+  margin-top: 20px;
 }
-h1:hover span{
+
+.container h1:hover span {
   color: black;
 }
-*/
+
 .scroll-down {
   height: 50px;
   width: 30px;
@@ -78,6 +80,7 @@ h1:hover span{
   bottom: 20px;
   border-radius: 50px;
   cursor: pointer;
+  z-index: 2;
 }
 
 .scroll-down::before,
@@ -96,6 +99,58 @@ h1:hover span{
 }
 
 .scroll-down::after {
+  top: 20%;
+  animation-delay: .3s;
+}
+
+@keyframes scroll-down {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    top: 90%;
+  }
+}
+
+/* NEW */
+.scroll-down-1 {
+  height: 50px;
+  width: 30px;
+  border: 2px solid black;
+  position: relative;
+  left: 50%;
+  bottom: -120px;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.scroll-down-1::before,
+.scroll-down-1::after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  border: 2px solid black;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 1s ease-in-out infinite;
+}
+
+.scroll-down-1::after {
   top: 20%;
   animation-delay: .3s;
 }
@@ -146,13 +201,17 @@ h1:hover span{
   height: 100px;
   display: block;
   background-color: Black;
+  margin: 0 auto;
+  position: sticky;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0px;
 }
 
 .inner_header {
   width: 1000px;
   height: 100%;
   display: block;
-  margin: 0 auto;
   /*background-color: Black;*/
 }
 
@@ -229,9 +288,8 @@ h1:hover span{
 }
 
 .text {
-  float:left;
+  float: left;
   width: 40%;
-  border: solid 1px DarkViolet;
   letter-spacing: 1.25px;
   font-size: 25px;
   gap: 1em;
@@ -245,17 +303,25 @@ h1:hover span{
   font-weight: 100px;
 }
 
-
-.photo img{
-  padding: 70px;
+.subset {
   display: flex;
-  width: 425px;
-  height: 425px;
-  border-radius: 70%
+  flex-direction: row;
+  height: 30vh;
 }
 
+.photo img {
+  /* padding: 70px; */
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%
+}
 
 #sec-2 {
   background-color: aliceblue;
+}
 
+#sec-3 {
+  min-height: 100vh;
+  width: 100%;
+  /*display: flex;*/
 }
