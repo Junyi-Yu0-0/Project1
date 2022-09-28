@@ -71,6 +71,7 @@ h1 {
   color: black;
 }
 
+/* scrolldown sec-1 */
 .scroll-down {
   height: 50px;
   width: 30px;
@@ -80,7 +81,6 @@ h1 {
   bottom: 20px;
   border-radius: 50px;
   cursor: pointer;
-  z-index: 2;
 }
 
 .scroll-down::before,
@@ -122,7 +122,7 @@ h1 {
   }
 }
 
-/* NEW */
+/* scrolldown sec-2 */
 .scroll-down-1 {
   height: 50px;
   width: 30px;
@@ -178,7 +178,6 @@ h1 {
   height: 100vh;
   display: flex;
   align-items: center;
-  /*justify-content: center;*/
   flex-direction: column;
   background: Blue;
   background: -webkit-linear-gradient(to right,
@@ -193,7 +192,7 @@ h1 {
 #sec-2 {
   min-height: 100vh;
   width: 100%;
-  /*display: flex;*/
+  background-color: aliceblue;
 }
 
 .header {
@@ -316,12 +315,9 @@ h1 {
   border-radius: 50%
 }
 
-#sec-2 {
-  background-color: aliceblue;
-}
 
 #sec-3 {
   min-height: 100vh;
   width: 100%;
-  /*display: flex;*/
+  background-color: aliceblue;
 }
