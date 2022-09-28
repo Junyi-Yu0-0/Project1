@@ -321,3 +321,22 @@ h1 {
   width: 100%;
   background-color: aliceblue;
 }
+
+
+.enter h2{
+  height: 100%;
+  font-family: 'Made', sans-serif;
+  color: Dimgray;
+  font-size: 40px;
+  letter-spacing: 1px;
+  margin:auto;
+  display: flex;
+  justify-content: center;
+}
+
+.enter img {
+  padding: 70px;
+  margin:auto;
+  display: flex;
+  justify-content: center;
+}
