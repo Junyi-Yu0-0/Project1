@@ -283,6 +283,22 @@ h1{
   transition: 0.3s ease;
 }
 
-main {
-  margin-left:50px;
+.enter h2{
+  height: 100%;
+  font-family: 'Made', sans-serif;
+  color: Dimgray;
+  font-size: 40px;
+  letter-spacing: 1px;
+  margin:auto;
+  display: flex;
+  justify-content: center;
+}
+
+.enter img {
+  width: 50vw;
+  height: 50vw;
+  padding: 70px;
+  margin:auto;
+  display: flex;
+  justify-content: center;
 }
